@@ -288,7 +288,7 @@ mybatis主要配置一下几个功能
 
 ### 2、配置方式
 
-#### 1、<mapper resource="">
+#### 1、\<mapper resource="">
 
 1. 说明
 
@@ -304,7 +304,7 @@ mybatis主要配置一下几个功能
 
    ![](http://opzv089nq.bkt.clouddn.com/17-9-25/31157835.jpg)
 
-#### 2、<mapper class=" " />
+#### 2、\<mapper class=" " />
 
 1. 说明
 
@@ -326,7 +326,7 @@ mybatis主要配置一下几个功能
    - 映射文件要与接口在同一包中
    - 映射文件中<mapper/>的namespace属性值为dao接口的全类名
 
-#### 3、<package name="">
+#### 3、\<package name="">
 
 1. 说明
 
@@ -340,12 +340,12 @@ mybatis主要配置一下几个功能
 
 3. 注意
 
-   {0}. dao使用mapper动态代理实现
-   {0}. 映射文件名要与dao接口名相同
-   {0}. 映射文件要与接口在同一包中
-   {0}. 映射文件中<mapper/>的namespace属性值为dao接口的全类名
+   - dao使用mapper动态代理实现
+   - 映射文件名要与dao接口名相同
+   - 映射文件要与接口在同一包中
+   - 映射文件中\<mapper/>的namespace属性值为dao接口的全类名
 
-#### 4、<mapper url="" />
+#### 4、\<mapper url="" />
 
 1. 说明
 
@@ -367,11 +367,11 @@ mybatis主要配置一下几个功能
 
 #### 2.1、xml配置方式
 
-##### 1、<package/>方式(开发常用)
+##### 1、\<package/>方式(开发常用)
 
 1. 说明
 
-   一般使用<package/>方式，这样做的好处是会将该包中年所有实体类的简单类名指定为别名
+   一般使用\<package/>方式，这样做的好处是会将该包中年所有实体类的简单类名指定为别名
 
 2. 示例代码
 
@@ -382,7 +382,7 @@ mybatis主要配置一下几个功能
    </typeAliases>
    ```
 
-#### 2.2、通过<typealias/>指定
+#### 2.2、通过\<typealias/>指定
 
 1. 说明
 
