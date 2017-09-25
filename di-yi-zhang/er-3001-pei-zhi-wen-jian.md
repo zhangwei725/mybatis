@@ -288,7 +288,7 @@ mybatis主要配置一下几个功能
 
 ### 2、配置方式
 
-#### 1、'<mapper resource="">'
+#### 1、`<mapper resource="">`
 
 1. 说明
 
@@ -304,7 +304,7 @@ mybatis主要配置一下几个功能
 
    ![](http://opzv089nq.bkt.clouddn.com/17-9-25/31157835.jpg)
 
-#### 2、'<mapper class=" " />'
+#### 2、`<mapper class="" />`
 
 1. 说明
 
@@ -326,7 +326,7 @@ mybatis主要配置一下几个功能
    - 映射文件要与接口在同一包中
    - 映射文件中<mapper/>的namespace属性值为dao接口的全类名
 
-#### 3、'<package name="">'
+#### 3、`<package name="">`
 
 1. 说明
 
@@ -345,7 +345,7 @@ mybatis主要配置一下几个功能
    - 映射文件要与接口在同一包中
    - 映射文件中\<mapper/>的namespace属性值为dao接口的全类名
 
-#### 4、'<mapper url="" />'
+#### 4、`<mapper url="" />`
 
 1. 说明
 
