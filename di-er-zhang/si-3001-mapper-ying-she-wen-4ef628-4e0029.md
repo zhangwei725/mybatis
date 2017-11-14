@@ -345,3 +345,22 @@
    ```
 
 3. 删除操作
+
+   ```xml
+       <delete id="delete" >
+           DELETE FROM TB_USER  WHERE USER_ID=#{userId}
+       </delete>
+   ```
+
+   ```java
+       @Test
+       public void delete() throws Exception {
+           SqlSession sqlSession = ssf.openSession();
+           UserMapper mapper = sqlSession.getMapper(UserMapper.class);
+           int count = mapper.delete(1);
+           System.out.println(count);
+           sqlSession.commit();
+           sqlSession.close();
+       }
+   ```
+
