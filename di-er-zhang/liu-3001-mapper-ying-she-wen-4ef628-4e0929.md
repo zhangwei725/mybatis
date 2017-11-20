@@ -1,8 +1,8 @@
-# Mapper映射文件(三)
+# Mapper映射文件\(三\)
 
 ### 概要
 
-​	MyBatis中在查询进行select映射的时候，返回类型可以用resultType，也可以用resultMap，resultType是直接表示返回类型的，而resultMap则是对外部ResultMap的引用，但是resultType跟resultMap不能同时存在。
+​    MyBatis中在查询进行select映射的时候，返回类型可以用resultType，也可以用resultMap，resultType是直接表示返回类型的，而resultMap则是对外部ResultMap的引用，但是resultType跟resultMap不能同时存在。  
 在MyBatis进行查询映射时，其实查询出来的每一个属性都是放在一个对应的Map里面的，其中键是属性名，值则是其对应的值。
 
 1. 当提供的返回类型属性是resultType时，MyBatis会将Map里面的键值对取出赋给resultType所指定的对象对应的属性。所以其实MyBatis的每一个查询映射的返回类型都是ResultMap，只是当提供的返回类型属性是resultType的时候，MyBatis对自动的给把对应的值赋给resultType所指定对象的属性。
@@ -12,11 +12,11 @@
 
 ### 1、概要
 
-​	使用resultType进行输出映射，只有查询出来的列名和pojo中的属性名一致，该列才可以映射成功。如果查询出来的列名和pojo中的属性名全部不一致，没有创建pojo对象。只要查询出来的列名和pojo中的属性有一个一致，就会创建pojo对象
+​    使用resultType进行输出映射，只有查询出来的列名和pojo中的属性名一致，该列才可以映射成功。如果查询出来的列名和pojo中的属性名全部不一致，没有创建pojo对象。只要查询出来的列名和pojo中的属性有一个一致，就会创建pojo对象
 
 ### 2、配置说明
 
-1. mapper.xml(模板)
+1. mapper.xml\(模板\)
 
    ```xml
    <!--resultType="int" 可以省略不写 框架会自行判断 -->
@@ -146,8 +146,8 @@
 1. 查询出来的结果集只有一行且一列，可以使用简单类型进行输出映射。（输出简单类型的要求）
 2. 查询pojo对象和pojo集合
    不管是输出的pojo单个对象还是一个集合（list中包括pojo），在mapper.xml中resultType指定的类型是一样的。在mapper.java指定的方法返回值类型不一样：
-   - 输出单个pojo对象，方法返回值是单个对象类型
-   - 输出pojo对象list，方法返回值是List
+   * 输出单个pojo对象，方法返回值是单个对象类型
+   * 输出pojo对象list，方法返回值是List
 3. 输出pojo对象可以改用hashmap输出类型，将输出的字段名称作为map的key，value为字段值。如果是集合，那就是list里面套了HashMap
 4. 使用resultType进行输出映射，只有查询出来的列名和pojo中的属性名一致，该列才可以映射成功
 
@@ -155,16 +155,16 @@
 
 ### 1、概要
 
-​	 resultMap 是MyBatis 中最重要最强大的元素了。你可以让你比使用JDBC 调用结果集省掉90%的代码，也可以让你做许多JDBC 不支持的事	
+​     resultMap 是MyBatis 中最重要最强大的元素了。你可以让你比使用JDBC 调用结果集省掉90%的代码，也可以让你做许多JDBC 不支持的事
 
 ### 2、什么情况下使用
 
 1. 如果查询出来的列名和pojo的属性名不一致，通过定义一个resultMap对列名和pojo属性名之间作一个映射关系
-2. 关系映射,比如一对一,一对多(多对一),多对多
+2. 关系映射,比如一对一,一对多\(多对一\),多对多
 
 ### 2、配置说明
 
-1. 完整配置(模板)
+1. 完整配置\(模板\)
 
    ```
    <!--
@@ -409,7 +409,7 @@
               * 生产日期
               */
      private Timestamp createTime;
-   }    
+   }
    ```
 
    2、**订单表orders**：记录了用户所创建的订单（购买商品的订单）
@@ -469,7 +469,7 @@
       * 明细对应的商品信息
       */
      private Items items;
-   }  
+   }
    ```
 
    4、**用户表use**r：记录了购买商品的用户信息
@@ -497,7 +497,7 @@
         * 用户创建的订单列表
         */
        private List<Orders> ordersList;
-   }  
+   }
    ```
 
 3. 关系模型
@@ -548,7 +548,7 @@
 
 ## 二、高级
 
- 
+
 
 
 
