@@ -11,5 +11,6 @@
   * [六、Mapper映射文件\(三\)](di-er-zhang/liu-3001-mapper-ying-she-wen-4ef628-4e0929.md)
 * [第三章](di-san-zhang.md)
   * [七、高级映射](di-san-zhang/qi-3001-gao-ji-ying-she.md)
+  * [八、动态SQL](di-san-zhang/ba-3001-dong-tai-sql.md)
 * 一、概要
 
